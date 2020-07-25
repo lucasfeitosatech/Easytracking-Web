@@ -17,7 +17,7 @@ var b;
 
 module.exports = {
     async easytrackingRender(req,res) {
-        res.render('easytracking');
+        res.render(__dirname + '/easytracking');
     },
     async easytrackingPost(req,res,next){
         let qr_text = req.body.qr_text;  
